@@ -46,9 +46,9 @@ class FizzBuzzEnvironment():
     def step(self, action):
         # Check if the action performed was the correct choice
         if self.performAction(action, self.loc) == self.FizzBuzz(self.loc):
-            reward = 500
+            reward = 1
         else:
-            reward = -300
+            reward = -1
 
         self.loc += 1
         is_done = False

@@ -6,7 +6,7 @@ import sys
 from inputValidation import validateInput
 
 
-NUM_EPISODES = 1000
+NUM_EPISODES = 50
 
 
 def run_qlearning(lengthOfArray):

@@ -15,4 +15,4 @@ This mini project was mainly used as a learning opportunity for how to train RL 
   - The optional number represents how far you wish to go up to. For example `python3 simulation.py 500` will make the agent train from 1 to 500.
   - If no number is provided, the agent will train on a default value of 100.
 
-By default, the agent runs 1000 episodes. This can be modified by changing the `NUM_EPISODES` value in `simulation.py`.
+By default, the agent runs 50 episodes. This can be modified by changing the `NUM_EPISODES` value in `simulation.py`.
