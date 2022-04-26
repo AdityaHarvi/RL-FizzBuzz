@@ -4,6 +4,7 @@
 
 # FizzBuzz is HARD, so I made a RL agent do it instead
 This agent utilizes a Q-Learning algorithm to learn the proper actions to perform in this problem.
+This mini project was mainly used as a learning opportunity for how to train RL agents.
 
 ## Prerequisites
 - Ensure you have python installed
@@ -13,3 +14,5 @@ This agent utilizes a Q-Learning algorithm to learn the proper actions to perfor
 - To run the program use `python3 simulation.py <optional: number>`
   - The optional number represents how far you wish to go up to. For example `python3 simulation.py 500` will make the agent train from 1 to 500.
   - If no number is provided, the agent will train on a default value of 100.
+
+By default, the agent runs 1000 episodes. This can be modified by changing the `NUM_EPISODES` value in `simulation.py`.
