@@ -22,12 +22,16 @@ def run_qlearning(lengthOfArray):
         while not done:
             action = agent.get_action(state)
             new_state, reward, done = env.step(action)
-            agent.update(state, action, reward, new_state, done)
+            agent.update(state, action, reward, new_state)
             state = new_state
 
     # Print out the final solution
     spaces = 8
     error_count = 0
+
+    for x in range(0, lengthOfArray):
+        if agent.get_final_results(x) != env.FizzBuzz(x) and x != lengthOfArray - 1:
+            error_count += 1
 
     print("Simulation Complete")
     print("\nSUMMARY:")
@@ -40,8 +44,6 @@ def run_qlearning(lengthOfArray):
         print("  AGENT  |  ACTUAL")
         for x in range(0, lengthOfArray):
             print(f'{agent.get_final_results(x):<{spaces}} | {env.FizzBuzz(x)}')
-            if agent.get_final_results(x) != env.FizzBuzz(x) and x != lengthOfArray - 1:
-                error_count += 1
     else:
         print("Program complete")
 
