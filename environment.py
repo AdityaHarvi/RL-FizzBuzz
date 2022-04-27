@@ -1,5 +1,3 @@
-import numpy as np
-
 OG_NUM, FIZZ, BUZZ, FIZZBUZZ = 0, 1, 2, 3 # agents actions
 
 class FizzBuzzEnvironment():
